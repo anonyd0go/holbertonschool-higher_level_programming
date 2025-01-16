@@ -1,0 +1,2 @@
+# Pyhton - import & modules
+This directory serves as the introduction for creating python modules.  Importing and using functions from external files (specifically, created modules).  Using the built in Python function `dir()`.  Preventing code sripts from being executed when importing.  Finally, using command line arguments in Python with the help of built in libraries.
