@@ -8,3 +8,6 @@ In this directory we start playing with Python and its built in string manipulat
 ## [Python - if, else, loops, and functions](/python-if_else_loops_functions/)
 In this directory we explore conditional statements, the basics of writing loops, and writing functions in Python.
 It also serves with familiarization with the importance of indentation of this language.
+
+## [Python - import & modules](/python-import_modules/)
+This directory serves as the introduction for creating python modules.  Importing and using functions from external files (specifically, created modules).  Using the built in Python function `dir()`.  Preventing code sripts from being executed when importing.  Finally, using command line arguments in Python with the help of built in libraries.
