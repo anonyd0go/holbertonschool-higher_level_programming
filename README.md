@@ -12,5 +12,8 @@ It also serves with familiarization with the importance of indentation of this l
 ## [Python - import & modules](/python-import_modules/)
 This directory serves as the introduction for creating python modules.  Importing and using functions from external files (specifically, created modules).  Using the built in Python function `dir()`.  Preventing code sripts from being executed when importing.  Finally, using command line arguments in Python with the help of built in libraries.
 
-## [Python - Data Structures](/python-data_structures/)
-This direcory is an introduction to built in data structures in Python.  These data structures include lists, tuples, and the like.
+## [Python - Data Structures: Lists, Tuples](/python-data_structures/)
+This direcory is an introduction to built in data structures in Python.  In this directoroy we will focus on lists and tuples and some of their common  methods. We will also explore sequences, tuple unpacking, sequence unpacking, and list comprehension.
+
+## [Python - More Data Structures: Set, Dictionary](/python-more_data_structures/)
+This directory serves as an introduction to the Python built in data structures of `dictionaries` and `sets`. We will understand what each of these data structures are, the differences between previously studied data structures, their common methods, and when to use them.  This directory will also look at lambda functions and the map, reduce, filter functions.
