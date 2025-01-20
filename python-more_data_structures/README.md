@@ -1,0 +1,2 @@
+# Python - More Data Structures: Set, Dictionary
+This directory serves as an introduction to the Python built in data structures of `dictionaries` and `sets`. We will understand what each of these data structures are, the differences between previously studied data structures, their common methods, and when to use them.  This directory will also look at lambda functions and the map, reduce, filter functions.
