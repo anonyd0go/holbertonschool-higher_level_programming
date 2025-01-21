@@ -17,3 +17,6 @@ This direcory is an introduction to built in data structures in Python.  In this
 
 ## [Python - More Data Structures: Set, Dictionary](/python-more_data_structures/)
 This directory serves as an introduction to the Python built in data structures of `dictionaries` and `sets`. We will understand what each of these data structures are, the differences between previously studied data structures, their common methods, and when to use them.  This directory will also look at lambda functions and the map, reduce, filter functions.
+
+## [Python - Exceptions](/python-exceptions/)
+This directory will help us introduc the concept of exeptions, the difference between them and errors, when and where to use exceptions, how to handle these exceptions, and how to implement your own exceptions.
