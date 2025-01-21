@@ -1,0 +1,2 @@
+# Python - Exceptions
+This directory will help us introduc the concept of exeptions, the difference between them and errors, when and where to use exceptions, how to handle these exceptions, and how to implement your own exceptions.
