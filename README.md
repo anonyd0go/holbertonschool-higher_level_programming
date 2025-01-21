@@ -20,3 +20,7 @@ This directory serves as an introduction to the Python built in data structures 
 
 ## [Python - Exceptions](/python-exceptions/)
 This directory will help us introduc the concept of exeptions, the difference between them and errors, when and where to use exceptions, how to handle these exceptions, and how to implement your own exceptions.
+
+## [Python - Test-driven development](/python-test_driven_development/)
+This directory serves as an introduction to the python testing environmnet during developement.
+It will include interactive tests, their importance, writing Docstrings, writing module and function documentation, conductiong tests with basic option flags, and finding edge cases.
