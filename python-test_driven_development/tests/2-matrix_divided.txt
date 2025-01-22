@@ -1,0 +1,43 @@
+The ``matrix_divided`` module
+=============================
+
+Using ``matrix_divided``
+------------------------
+
+Importing the module
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Checking the module Docstring
+    >>> docstr = __import__("2-matrix_divided").__doc__
+    >>> len(docstr) > 1
+    True
+
+Dividing a matrix of integers by an integer
+    >>> matrix = [[1, 2, 3], [4, 5, 6]]
+    >>> matrix_divided(matrix, 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Dividing a matrix of floats by a float
+    >>> matrix = [[1.5, 2.5, 3.5], [4.5, 5.5, 6.5]]
+    >>> matrix_divided(matrix, 2.0)
+    [[0.75, 1.25, 1.75], [2.25, 2.75, 3.25]]
+
+Handling invalid type for matrix (not a list of lists)
+    >>> matrix_divided(123, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Handling invalid type for div (not a number)
+    >>> matrix = [[1, 2, 3], [4, 5, 6]]
+    >>> matrix_divided(matrix, "2")
+    Traceback (most recent call last):
+        ...
+    TypeError: div must be a number
+
+Handling division by zero
+    >>> matrix = [[1, 2, 3], [4, 5, 6]]
+    >>> matrix_divided(matrix, 0)
+    Traceback (most recent call last):
+        ...
+    ZeroDivisionError: division by zero
