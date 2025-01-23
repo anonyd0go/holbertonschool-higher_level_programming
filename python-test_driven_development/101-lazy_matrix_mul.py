@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-from numpy import matmul
 """
 This module provides a function to multiply two matrices using NumPy.
 """
+from numpy import matmul
 
 
 def lazy_matrix_mul(m_a, m_b):
