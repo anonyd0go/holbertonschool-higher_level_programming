@@ -27,12 +27,12 @@ def lazy_matrix_mul(m_a, m_b):
     if isinstance(m_a, str) or isinstance(m_b, str):
         raise TypeError("Scalar operands are not allowed, use '*' instead")
     if len(m_a[0]) == 0:
-        raise ValueError("shapes ({},{}}) and ({},{}) \
+        raise ValueError("shapes ({},{}) and ({},{}) \
                          not aligned: 0 (dim 1) != 2 \
                          (dim 0)".format(len(m_a), len(m_a[0]),
                                          len(m_b), len(m_b[0])))
     if len(m_b[0]) == 0:
-        raise ValueError("shapes ({},{}}) and ({},{}) \
+        raise ValueError("shapes ({},{}) and ({},{}) \
                          not aligned: 2 (dim 1) != 1 \
                          (dim 0)".format(len(m_a), len(m_a[0]),
                                          len(m_b), len(m_b[0])))
