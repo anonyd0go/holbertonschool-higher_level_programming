@@ -79,3 +79,4 @@ Handling incompatible matrices for multiplication
     Traceback (most recent call last):
         ...
     ValueError: m_a and m_b can't be multiplied
+
