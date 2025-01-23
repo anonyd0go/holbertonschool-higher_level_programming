@@ -24,10 +24,13 @@ def lazy_matrix_mul(m_a, m_b):
         TypeError: If m_a or m_b is not a rectangle.
         ValueError: If m_a and m_b cannot be multiplied.
     """
-    """if not isinstance(m_a, list):
+    if isinstance(m_a, str) or isinstance(m_b, str):
+        raise TypeError("Scalar operands are not allowed, use '*' instead")
+    
+    if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
     if not isinstance(m_b, list):
-        raise TypeError("m_b must be a list")"""
+        raise TypeError("m_b must be a list")
 
     if not all(isinstance(row, list) for row in m_a):
         raise TypeError("m_a must be a list of lists")
