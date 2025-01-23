@@ -60,3 +60,13 @@ Handling invalid type for text (None)
 
 Handling empty string
     >>> text_indentation("")
+
+Handling special characters and no characters
+    >>> text_indentation("Holberton. School? How are you: John")
+    Holberton.
+    <BLANKLINE>
+     School?
+    <BLANKLINE>
+     How are you:
+    <BLANKLINE>
+     John
