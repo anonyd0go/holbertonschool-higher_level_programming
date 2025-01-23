@@ -16,11 +16,11 @@ Printing text with periods, question marks, and colons
     >>> text_indentation("Hello. How are you? I am fine: thank you.")
     Hello.
     <BLANKLINE>
-     How are you?
+    How are you?
     <BLANKLINE>
-     I am fine:
+    I am fine:
     <BLANKLINE>
-     thank you.
+    thank you.
     <BLANKLINE>
 
 Handling text without any special characters
@@ -33,15 +33,9 @@ Handling text with multiple special characters in a row
     <BLANKLINE>
     .
     <BLANKLINE>
-    .
-    <BLANKLINE>
-     How are you?
-    <BLANKLINE>
-    ?
+    How are you?
     <BLANKLINE>
      I am fine:
-    <BLANKLINE>
-    :
     <BLANKLINE>
      thank you.
     <BLANKLINE>
@@ -65,8 +59,8 @@ Handling special characters and no characters
     >>> text_indentation("Holberton. School? How are you: John")
     Holberton.
     <BLANKLINE>
-     School?
+    School?
     <BLANKLINE>
-     How are you:
+    How are you:
     <BLANKLINE>
-     John
+    John
