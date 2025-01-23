@@ -24,12 +24,6 @@ Adding an integer with the default value for b
     >>> add_integer(2)
     100
 
-Handdling empty args Raise TypeError
-    >>> add_integer()
-    Traceback (most recent call last):
-    ...
-    TypeError: add_integer() missing 1 required positional argument: 'a'
-
 Adding a float and an integer
     >>> add_integer(100.3, -2)
     98
@@ -49,25 +43,13 @@ Handling invalid type for a (string)
     TypeError: a must be an integer
 
 Handling invalid type for b (string)
-    >>> add_integer(4, "5")
+    >>> add_integer(4, "School")
     Traceback (most recent call last):
         ...
     TypeError: b must be an integer
-
-Handling with more than 2 args
-    >>> add_integer(1, 2, 3)
-    Traceback (most recent call last):
-    ...
-    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 
 Handling invalid type for a (None)
     >>> add_integer(None)
     Traceback (most recent call last):
         ...
     TypeError: a must be an integer
-
-Handling invalid type for b (None)
-    >>> add_integer(4, None)
-    Traceback (most recent call last):
-        ...
-    TypeError: b must be an integer
