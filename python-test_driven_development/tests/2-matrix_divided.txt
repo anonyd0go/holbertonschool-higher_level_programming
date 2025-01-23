@@ -57,7 +57,7 @@ Handling missing argument 'div'
     TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
 Handling missing both arguments
-    >>> matrix_divided(matrix)
+    >>> matrix_divided()
     Traceback (most recent call last):
         ...
     TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
