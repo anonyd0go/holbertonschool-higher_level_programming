@@ -33,11 +33,17 @@ Handling text with multiple special characters in a row
     <BLANKLINE>
     .
     <BLANKLINE>
+    .
+    <BLANKLINE>
     How are you?
     <BLANKLINE>
-     I am fine:
+    ?
     <BLANKLINE>
-     thank you.
+    I am fine:
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    thank you.
     <BLANKLINE>
 
 Handling invalid type for text (integer)
