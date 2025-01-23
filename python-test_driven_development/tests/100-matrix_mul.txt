@@ -77,3 +77,27 @@ Handling incompatible matrices for multiplication
     Traceback (most recent call last):
         ...
     ValueError: m_a and m_b can't be multiplied
+
+Handling matrix m_a list of list of not number
+    >>> matrix_mul([["A", "C"], ["B", "D"]], [[1, 2], [3, 4]])
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a should contain only integers or floats
+
+Handling matrix m_b list of list of not number
+    >>> matrix_mul([[1, 2], [3, 4]], [["A", "C"], ["B", "D"]])
+    Traceback (most recent call last):
+        ...
+    TypeError: m_b should contain only integers or floats
+
+Handling missing one argument
+    >>> matrix_mul([[1, 2], [3, 4]])
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_mul() missing 1 required positional argument: 'm_b'
+
+Handling missing two arguments
+    >>> matrix_mul()
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
