@@ -41,3 +41,23 @@ Handling division by zero
     Traceback (most recent call last):
         ...
     ZeroDivisionError: division by zero
+
+Handling non rectangular matrix
+    >>> matrix = [[1, 2], [4, 5, 6]]
+    >>> matrix_divided(matrix, 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: Each row of the matrix must have the same size
+
+Handling missing argument 'div'
+    >>> matrix = [[1, 2, 3], [4, 5, 6]]
+    >>> matrix_divided(matrix)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Handling missing both arguments
+    >>> matrix_divided(matrix)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
