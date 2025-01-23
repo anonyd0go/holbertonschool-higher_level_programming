@@ -70,3 +70,9 @@ Handling special characters and no characters
     How are you:
     <BLANKLINE>
     John
+
+Handling missing one argument
+    >>> text_indentation()
+    Traceback (most recent call last):
+        ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
