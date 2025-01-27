@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 """
 This module provides a function to multiply two matrices using NumPy.
+
+This exercise is part of the holberton school curriculum.
+It needs to be modified to pass holberton school checkers which are
+are not made clear in the instructions.  It was supposed to check for the
+same outputs as 100-matrix_mul.py but they did not make the desired error checking,
+nor error messages clear in the instructions.
 """
 import numpy as np
 
