@@ -28,3 +28,7 @@ It will include interactive tests, their importance, writing Docstrings, writing
 ## [Python - Classes and Objects](/python-classes/)
 This directory explores the concepts of creating classes and using objects with Python in an OOP environment.
 The goal is to understand what are classes, objects, and instances.  What an attribute is when refering to these concepts.  The difference between private, protected, and public attributes.  How the `self` word is used inside class declarations.  Understanding the `__init__` method. Among other core OOP concepts.
+
+## [Python - More Classes and Objects](/python-more_classes/)
+In this directory, we will keep exploring classes and objects.
+We will study themes related to class instance attributes, class methods and static methods, `__str__` and `__repr__` methods as well as other `__x__` variables.
