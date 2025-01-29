@@ -30,7 +30,7 @@ class Rectangle:
 
     def __str__(self):
         """
-        Returns a string representation of the rectangle using the '#' character.
+        Returns a string representation of the rectangle using '#' char.
 
         Returns:
             str: The string representation of the rectangle.
