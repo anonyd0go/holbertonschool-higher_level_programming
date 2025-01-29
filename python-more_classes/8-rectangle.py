@@ -143,7 +143,8 @@ class Rectangle:
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """
-        Compares the areas of two rectangles and returns the one with the greater or equal area.
+        Compares the areas of two rectangles.
+        Returns the one with the greater area or equal area.
 
         Args:
             rect_1 (Rectangle): The first rectangle to compare.
