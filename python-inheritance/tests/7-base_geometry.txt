@@ -1,0 +1,54 @@
+The ``BaseGeometry`` module
+===========================
+
+Using ``BaseGeometry``
+----------------------
+
+Importing the module
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Checking the module Docstring
+    >>> docstr = __import__('7-base_geometry').__doc__
+    >>> len(docstr) > 1
+    True
+
+Checking the class Docstring
+    >>> class_docstr = BaseGeometry.__doc__
+    >>> len(class_docstr) > 1
+    True
+
+Checking the area method Docstring
+    >>> area_docstr = BaseGeometry.area.__doc__
+    >>> len(area_docstr) > 1
+    True
+
+Checking the integer_validator method Docstring
+    >>> validator_docstr = BaseGeometry.integer_validator.__doc__
+    >>> len(validator_docstr) > 1
+    True
+
+Creating an instance of BaseGeometry
+    >>> bg = BaseGeometry()
+    >>> isinstance(bg, BaseGeometry)
+    True
+
+Calling the area method
+    >>> bg.area()
+    Traceback (most recent call last):
+        ...
+    Exception: area() is not implemented
+
+Validating an integer value
+    >>> bg.integer_validator("my_int", 5)
+    
+Validating a non-integer value
+    >>> bg.integer_validator("my_int", "5")
+    Traceback (most recent call last):
+        ...
+    TypeError: my_int must be an integer
+
+Validating a non-positive integer value
+    >>> bg.integer_validator("my_int", -5)
+    Traceback (most recent call last):
+        ...
+    ValueError: my_int must be greater than 0
