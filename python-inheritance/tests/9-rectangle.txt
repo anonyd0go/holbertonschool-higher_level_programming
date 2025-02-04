@@ -1,0 +1,51 @@
+The ``Rectangle`` module
+=========================
+
+Using ``Rectangle``
+-------------------
+
+Importing the module
+    >>> Rectangle = __import__('9-rectangle').Rectangle
+
+Checking the class Docstring
+    >>> class_docstr = Rectangle.__doc__
+    >>> len(class_docstr) > 1
+    True
+
+Checking the __init__ method Docstring
+    >>> init_docstr = Rectangle.__init__.__doc__
+    >>> len(init_docstr) > 1
+    True
+
+Checking the area method Docstring
+    >>> area_docstr = Rectangle.area.__doc__
+    >>> len(area_docstr) > 1
+    True
+
+Checking the __str__ method Docstring
+    >>> str_docstr = Rectangle.__str__.__doc__
+    >>> len(str_docstr) > 1
+    True
+
+Creating an instance of Rectangle
+    >>> r = Rectangle(3, 4)
+    >>> isinstance(r, Rectangle)
+    True
+
+Calling the area method
+    >>> r.area()
+    12
+
+Checking the string representation
+    >>> str(r)
+    '[Rectangle] 3/4'
+
+Validating width and height
+    >>> r = Rectangle("3", 4)
+    Traceback (most recent call last):
+        ...
+    TypeError: width must be an integer
+    >>> r = Rectangle(3, -4)
+    Traceback (most recent call last):
+        ...
+    ValueError: height must be greater than 0
