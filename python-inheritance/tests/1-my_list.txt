@@ -1,0 +1,45 @@
+The ``MyList`` module
+=====================
+
+Using ``MyList``
+----------------
+
+Importing the module
+    >>> MyList = __import__('1-my_list').MyList
+
+Checking the module Docstring
+    >>> docstr = __import__('1-my_list').__doc__
+    >>> len(docstr) > 1
+    True
+
+Checking the class Docstring
+    >>> class_docstr = MyList.__doc__
+    >>> len(class_docstr) > 1
+    True
+
+Checking the method Docstring
+    >>> method_docstr = MyList.print_sorted.__doc__
+    >>> len(method_docstr) > 1
+    True
+
+Checking if MyList is a subclass of list
+    >>> issubclass(MyList, list)
+    True
+
+Creating an instance of MyList
+    >>> my_list = MyList()
+    >>> isinstance(my_list, list)
+    True
+
+Adding elements to MyList
+    >>> my_list.extend([3, 1, 2])
+    >>> my_list
+    [3, 1, 2]
+
+Printing the sorted list
+    >>> my_list.print_sorted()
+    [1, 2, 3]
+
+Ensuring the original list is not modified
+    >>> my_list
+    [3, 1, 2]
