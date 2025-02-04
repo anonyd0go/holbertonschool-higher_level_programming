@@ -32,3 +32,6 @@ The goal is to understand what are classes, objects, and instances.  What an att
 ## [Python - More Classes and Objects](/python-more_classes/)
 In this directory, we will keep exploring classes and objects.
 We will study themes related to class instance attributes, class methods and static methods, `__str__` and `__repr__` methods as well as other `__x__` variables.
+
+## [Python - Inheritance](/python-inheritance/)
+In this directory we will dive deeper into classes in python.  We will explore topics such as inheritance, superclass, subclasses, polymorphosm, and several other topics.
