@@ -1,0 +1,48 @@
+The ``lookup`` module
+=====================
+
+Using ``lookup``
+----------------
+
+Importing the module
+    >>> lookup = __import__('0-lookup').lookup
+
+Checking the module Docstring
+    >>> docstr = __import__('0-lookup').__doc__
+    >>> len(docstr) > 1
+    True
+
+Checking the function Docstring
+    >>> func_docstr = lookup.__doc__
+    >>> len(func_docstr) > 1
+    True
+
+Getting attributes and methods of a string object
+    >>> attrs = lookup("Hello")
+    >>> '__class__' in attrs
+    True
+    >>> '__str__' in attrs
+    True
+    >>> 'lower' in attrs
+    True
+
+Getting attributes and methods of a list object
+    >>> attrs = lookup([1, 2, 3])
+    >>> '__class__' in attrs
+    True
+    >>> '__len__' in attrs
+    True
+    >>> 'append' in attrs
+    True
+
+Getting attributes and methods of a custom object
+    >>> class MyClass:
+    ...     def my_method(self):
+    ...         pass
+    >>> attrs = lookup(MyClass)
+    >>> '__class__' in attrs
+    True
+    >>> '__dict__' in attrs
+    True
+    >>> 'my_method' in attrs
+    True
