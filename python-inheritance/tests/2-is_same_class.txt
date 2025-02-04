@@ -1,0 +1,44 @@
+The ``is_same_class`` module
+============================
+
+Using ``is_same_class``
+-----------------------
+
+Importing the module
+    >>> is_same_class = __import__('2-is_same_class').is_same_class
+
+Checking the module Docstring
+    >>> docstr = __import__('2-is_same_class').__doc__
+    >>> len(docstr) > 1
+    True
+
+Checking the function Docstring
+    >>> func_docstr = is_same_class.__doc__
+    >>> len(func_docstr) > 1
+    True
+
+Checking if an object is exactly an instance of a specified class
+    >>> is_same_class(42, int)
+    True
+    >>> is_same_class(42, float)
+    False
+    >>> is_same_class("Hello", str)
+    True
+    >>> is_same_class("Hello", object)
+    False
+
+Checking with custom classes
+    >>> class MyClass:
+    ...     pass
+    >>> class MySubClass(MyClass):
+    ...     pass
+    >>> obj = MyClass()
+    >>> is_same_class(obj, MyClass)
+    True
+    >>> is_same_class(obj, MySubClass)
+    False
+    >>> sub_obj = MySubClass()
+    >>> is_same_class(sub_obj, MyClass)
+    False
+    >>> is_same_class(sub_obj, MySubClass)
+    True
