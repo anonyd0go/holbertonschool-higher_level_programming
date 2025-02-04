@@ -1,0 +1,44 @@
+The ``inherits_from`` module
+============================
+
+Using ``inherits_from``
+-----------------------
+
+Importing the module
+    >>> inherits_from = __import__('4-inherits_from').inherits_from
+
+Checking the module Docstring
+    >>> docstr = __import__('4-inherits_from').__doc__
+    >>> len(docstr) > 1
+    True
+
+Checking the function Docstring
+    >>> func_docstr = inherits_from.__doc__
+    >>> len(func_docstr) > 1
+    True
+
+Checking if an object is an instance of a class that inherited (directly or indirectly) from the specified class
+    >>> class Base:
+    ...     pass
+    >>> class Derived(Base):
+    ...     pass
+    >>> base_obj = Base()
+    >>> derived_obj = Derived()
+    >>> inherits_from(derived_obj, Base)
+    True
+    >>> inherits_from(base_obj, Derived)
+    False
+    >>> inherits_from(derived_obj, Derived)
+    False
+    >>> inherits_from(base_obj, Base)
+    False
+
+Checking with built-in types
+    >>> inherits_from(True, int)
+    True
+    >>> inherits_from(1, bool)
+    False
+    >>> inherits_from([], object)
+    True
+    >>> inherits_from(1, object)
+    True
