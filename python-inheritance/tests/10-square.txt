@@ -1,0 +1,51 @@
+The ``Square`` module
+======================
+
+Using ``Square``
+----------------
+
+Importing the module
+    >>> Square = __import__('10-square').Square
+
+Checking the module Docstring
+    >>> docstr = __import__('10-square').__doc__
+    >>> len(docstr) > 1
+    True
+
+Checking the class Docstring
+    >>> class_docstr = Square.__doc__
+    >>> len(class_docstr) > 1
+    True
+
+Checking the __init__ method Docstring
+    >>> init_docstr = Square.__init__.__doc__
+    >>> len(init_docstr) > 1
+    True
+
+Checking the area method Docstring
+    >>> area_docstr = Square.area.__doc__
+    >>> len(area_docstr) > 1
+    True
+
+Creating an instance of Square
+    >>> s = Square(5)
+    >>> isinstance(s, Square)
+    True
+
+Calling the area method
+    >>> s.area()
+    25
+
+Checking the string representation
+    >>> str(s)
+    '[Rectangle] 5/5'
+
+Validating size
+    >>> s = Square("5")
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+    >>> s = Square(-5)
+    Traceback (most recent call last):
+        ...
+    ValueError: size must be greater than 0
