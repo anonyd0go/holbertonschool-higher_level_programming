@@ -118,4 +118,4 @@ def shape_info(shape):
         shape (Shape): The shape object to display information for.
     """
     print("Area: {}".format(shape.area()))
-    print("Perimiter: {}".format(shape.perimeter()))
+    print("Perimeter: {}".format(shape.perimeter()))
