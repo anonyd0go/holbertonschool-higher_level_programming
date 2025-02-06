@@ -38,18 +38,20 @@ class CountedIterator:
 
     def __next__(self):
         """
-        Returns the next item from the iterable and increments the count.
+    Returns the next item from the iterable and increments the count.
 
-        Raises:
-            StopIteration: If there are no more items in the iterable.
+    Raises:
+        StopIteration: If there are no more items in the iterable.
 
-        Returns:
-            The next item from the iterable.
-        """
-        if not next(self.iterator):
+    Returns:
+        The next item from the iterable.
+    """
+        try:
+            item = next(self.iterator)
+        except StopIteration:
             raise StopIteration
         self.__counter += 1
-        return next(self.iterator)
+        return item
 
     def __iter__(self):
         """
