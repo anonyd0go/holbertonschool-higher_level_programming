@@ -13,7 +13,7 @@ class SwimMixin:
         """
         Prints that the creature swims.
         """
-        print("The crature swims!")
+        print("The creature swims!")
 
 
 class FlyMixin:
