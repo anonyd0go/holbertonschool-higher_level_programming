@@ -44,3 +44,7 @@ In this directory we will explore:
 * **Method Overriding**: Employ method overriding to alter or enhance the behavior of base class methods.
 * **Multiple Inheritance**: Understand and apply multiple inheritance to form complex relationships between classes.
 * **Mixins**: Utilize mixins to compose behavior across unrelated classes.
+
+## [Python - Input/Output](/python-input_output/)
+In this directory, we will explore input and output manipulations throuh python.  The focus will be on file manipulation (read, write, transversal).  We will also use command line parameters for Python scripts.
+We will also explore `JSON` files. The focus will be on what they are and how to translate `Python` source code into a `JSON` file and vice versa. The concepts of serialization and deserialization will also be explored
