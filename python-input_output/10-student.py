@@ -32,7 +32,8 @@ class Student:
         Returns the dictionary representation of the Student instance.
 
         Args:
-            attrs (list, optional): A list of attribute names to include in the dictionary. Defaults to None.
+            attrs (list, optional): A list of attribute names
+            to include in the dictionary. Defaults to None.
 
         Returns:
             dict: The dictionary representation of the Student instance.
