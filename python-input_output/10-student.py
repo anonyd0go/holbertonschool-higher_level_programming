@@ -39,7 +39,7 @@ class Student:
             dict: The dictionary representation of the Student instance.
         """
         json_dict = {}
-        if attrs and isinstance(attrs, list):
+        if isinstance(attrs, list):
             for ele in attrs:
                 if ele in self.__dict__.keys():
                     json_dict[ele] = self.__dict__[ele]
