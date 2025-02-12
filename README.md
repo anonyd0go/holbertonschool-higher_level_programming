@@ -48,3 +48,6 @@ In this directory we will explore:
 ## [Python - Input/Output](/python-input_output/)
 In this directory, we will explore input and output manipulations throuh python.  The focus will be on file manipulation (read, write, transversal).  We will also use command line parameters for Python scripts.
 We will also explore `JSON` files. The focus will be on what they are and how to translate `Python` source code into a `JSON` file and vice versa. The concepts of serialization and deserialization will also be explored
+
+## [Python - Serialization](/python-serialization/)
+In this directory we will delve into how data can be transformed and comunicated with different parts of a system and between systems.  It is meant to enhance our understanding and practical skills when handling real-world applications.  The methods we sill explore are **marshalling** and **serialization**.
