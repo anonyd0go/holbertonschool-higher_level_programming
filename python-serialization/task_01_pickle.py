@@ -43,8 +43,11 @@ class CustomObject:
             filename (str): The name of the file
             to save the serialized object to.
         """
-        with open(filename, 'wb')as handler:
-            pickle.dump(self, handler)
+        try:
+            with open(filename, 'wb')as handler:
+                pickle.dump(self, handler)
+        except Exception as e:
+            return None
 
     @classmethod
     def deserialize(cls, filename):
@@ -58,8 +61,11 @@ class CustomObject:
         Returns:
             CustomObject: The deserialized object.
         """
-        with open(filename, 'rb') as handler:
-            return pickle.load(handler)
+        try:
+            with open(filename, 'rb') as handler:
+                return pickle.load(handler)
+        except Exception as e:
+            return None
 
     def __str__(self):
         """
