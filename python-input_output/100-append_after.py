@@ -3,7 +3,6 @@
 This module defines a function that inserts a line of text to a file,
 after each line containing a specific string.
 """
-from re import search
 
 
 def append_after(filename="", search_string="", new_string=""):
@@ -21,7 +20,7 @@ def append_after(filename="", search_string="", new_string=""):
     with open(filename, 'r', encoding='utf-8') as handler:
         file_lines = handler.readlines()
     for i in range(len(file_lines)):
-        if search(search_string, file_lines[i]):
+        if search_string in file_lines[i]:
             file_lines.insert(i + 1, new_string)
     with open(filename, 'w', encoding='utf-8') as handler:
         for line in file_lines:
