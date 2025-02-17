@@ -51,3 +51,6 @@ We will also explore `JSON` files. The focus will be on what they are and how to
 
 ## [Python - Serialization](/python-serialization/)
 In this directory we will delve into how data can be transformed and comunicated with different parts of a system and between systems.  It is meant to enhance our understanding and practical skills when handling real-world applications.  The methods we sill explore are **marshalling** and **serialization**.
+
+## [RESTful API](/restful-api/)
+This directory explores the concept of Hypertext Transfer Protocol (HTTP/HTTPs) with the goal to thuroughly understand how data is transfered between systems in modern day.  Deep API development with python will be studied as well as security, authorization, and authentication requirements.  Finally we will enphasize the importance of standards and documentation for API usability and maintenance.
