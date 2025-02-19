@@ -37,7 +37,8 @@ def fetch_and_save_posts():
 
     if req.status_code == 200:
         posts = req.json()
-        fields = [field for field in posts[0].keys()]
+        fields = ['id', 'title', 'body']
+        posts = [{field: post[field] for field in fields} for post in posts]
         with open(csv_posts, 'w', encoding='utf-8') as csv_handle:
             writer = csv.DictWriter(csv_handle, fieldnames=fields)
 
