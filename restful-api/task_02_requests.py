@@ -18,7 +18,7 @@ def fetch_and_print_posts():
     each post.
     """
     req = requests.get("https://jsonplaceholder.typicode.com/posts")
-    print("Status code: {}".format(req.status_code))
+    print("Status Code: {}".format(req.status_code))
     if req.status_code == 200:
         for dict in req.json():
             print("{}".format(dict["title"]))
