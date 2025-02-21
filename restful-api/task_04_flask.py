@@ -37,7 +37,7 @@ def user_page(username): # use escape() on username
     username = escape(username)
     if username in users:
         return jsonify(users[username])
-    return jsonify({"error": "User not found"}), 404
+    return jsonify({"error": "User not found"})
 
 @app.route("/add_user", methods=['POST'])
 def add_user():
@@ -53,4 +53,4 @@ def add_user():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
