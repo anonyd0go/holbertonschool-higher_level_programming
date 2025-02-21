@@ -21,10 +21,11 @@ def status():
 
 @app.route("/user/<username>")
 def user_page(username): # use escape() on username
-    username = escape(username)
-    if username in users:
-        return jsonify(users[username])
-    return jsonify({"error": "User not found"})
+    user = user.get(escape(username))
+    if user:
+        return jsonify(user)
+    else:
+        return jsonify({"error": "User not found"}), 404
 
 @app.route("/add_user", methods=['POST'])
 def add_user():
