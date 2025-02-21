@@ -19,7 +19,7 @@ def status():
     return "Ok"
 
 @app.route("/user/<username>")
-def user_page(username): # use escape() on username
+def user_page(username):
     user = user.get(username)
     if user:
         return jsonify(user)
