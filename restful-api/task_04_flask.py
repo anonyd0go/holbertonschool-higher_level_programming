@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 from flask import Flask, jsonify, request
-from markupsafe import escape
 
 
 app = Flask(__name__)
@@ -21,7 +20,7 @@ def status():
 
 @app.route("/user/<username>")
 def user_page(username): # use escape() on username
-    user = user.get(escape(username))
+    user = user.get(username)
     if user:
         return jsonify(user)
     else:
