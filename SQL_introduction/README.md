@@ -1,0 +1,2 @@
+# SQL - Introduction
+In this repository we will get an introduction to relational databases through SQL (Standard Query Language).  We will use MySQL to create a database.  We will also learn how to create and modify the data as well as how to traverse a database through both DDL (`CREATE`, `ALTER`, `DROP`, `TRUNCATE`) and DML (`SELECT`, `INSERT`, `UPDATE`, `DELETE`).  We will also explore how to use subqueries and creating SQL functions.
