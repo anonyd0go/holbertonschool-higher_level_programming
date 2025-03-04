@@ -54,3 +54,6 @@ In this directory we will delve into how data can be transformed and comunicated
 
 ## [RESTful API](/restful-api/)
 This directory explores the concept of Hypertext Transfer Protocol (HTTP/HTTPs) with the goal to thuroughly understand how data is transfered between systems in modern day.  Deep API development with python will be studied as well as security, authorization, and authentication requirements.  Finally we will enphasize the importance of standards and documentation for API usability and maintenance.
+
+## [SQL - Introduction](/SQL_introduction/)
+In this repository we will get an introduction to relational databases through SQL (Standard Query Language).  We will use MySQL to create a database.  We will also learn how to create and modify the data as well as how to traverse a database through both DDL (`CREATE`, `ALTER`, `DROP`, `TRUNCATE`) and DML (`SELECT`, `INSERT`, `UPDATE`, `DELETE`).  We will also explore how to use subqueries and creating SQL functions.
