@@ -57,3 +57,6 @@ This directory explores the concept of Hypertext Transfer Protocol (HTTP/HTTPs) 
 
 ## [SQL - Introduction](/SQL_introduction/)
 In this repository we will get an introduction to relational databases through SQL (Standard Query Language).  We will use MySQL to create a database.  We will also learn how to create and modify the data as well as how to traverse a database through both DDL (`CREATE`, `ALTER`, `DROP`, `TRUNCATE`) and DML (`SELECT`, `INSERT`, `UPDATE`, `DELETE`).  We will also explore how to use subqueries and creating SQL functions.
+
+## [SQL - More queries](/SQL_more_queries/)
+In this directory we will be exploring more SQL concepts.  We will create and delete users and assign privileges to the users.  We will understand MySQL constraints when creating and designing detabases. We will utilize different `JOIN`s and `UNION`s to retrieve data from multiple tables at the same time.  Finally we will look into using subqueries for fetching data from our databases.
