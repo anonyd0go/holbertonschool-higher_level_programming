@@ -1,0 +1,2 @@
+# SQL - More queries
+In this directory we will be exploring more SQL concepts.  We will create and delete users and assign privileges to the users.  We will understand MySQL constraints when creating and designing detabases. We will utilize different `JOIN`s and `UNION`s to retrieve data from multiple tables at the same time.  Finally we will look into using subqueries for fetching data from our databases.
