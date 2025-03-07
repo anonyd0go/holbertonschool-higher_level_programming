@@ -24,7 +24,8 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-    query = "SELECT * FROM states WHERE name = BINARY %s ORDER BY id ASC"
+    query = "SELECT * FROM states \
+        WHERE name = BINARY %s ORDER BY id ASC"
     cursor.execute(query, (state_name,))
 
     states = cursor.fetchall()
