@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Script that displays all values in the states table where name exactly matches the argument.
+Script that displays all values in the states table
+where name exactly matches the argument.
 Safe from SQL injection and case-sensitive.
 """
 
