@@ -23,7 +23,7 @@ class City(Base):
         state (relationship): The relationship to the State model.
     """
     __tablename__ = "cities"
-    id = Column(Integer, primary_key=True)
-    name = Column("name", String(128))
-    state_id = Column(Integer, ForeignKey("states.id"))
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    name = Column("name", String(128), nullable=False)
+    state_id = Column(Integer, ForeignKey("states.id"), nullable=False)
     state = relationship("State")
