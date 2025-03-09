@@ -21,9 +21,7 @@ if __name__ == "__main__":
 
     connct = f"mysql+mysqldb://{username}:{password}@localhost:3306/{database}"
 
-    engine = create_engine(connct)
-
-    Base.metadata.create_all(engine)
+    engine = create_engine(connct, pool_pre_ping=True)
 
     Session = sessionmaker(bind=engine)
     session = Session()
