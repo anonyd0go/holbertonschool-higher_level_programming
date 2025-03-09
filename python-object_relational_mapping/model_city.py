@@ -8,7 +8,6 @@ from sqlalchemy.orm import relationship
 from model_state import Base
 
 
-
 class City(Base):
     """
     A class used to represent a City.
@@ -21,7 +20,11 @@ class City(Base):
         state (relationship): The relationship to the State model.
     """
     __tablename__ = "cities"
-    id = Column("id", Integer, primary_key=True, nullable=False, autoincrement=True)
+    id = Column(
+        "id", Integer, primary_key=True, nullable=False, autoincrement=True
+        )
     name = Column("name", String(128), nullable=False)
-    state_id = Column("state_id", Integer, ForeignKey("states.id"), nullable=False)
+    state_id = Column(
+        "state_id", Integer, ForeignKey("states.id"), nullable=False
+        )
     state = relationship("State", back_populates="cities")
