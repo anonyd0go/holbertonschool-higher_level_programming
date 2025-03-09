@@ -19,7 +19,7 @@ if __name__ == "__main__":
     password = argv[2]
     database = argv[3]
 
-    connct = f'mysql+pymysql://{username}:{password}@localhost:3306/{database}'
+    connct = f"mysql+mysqldb://{username}:{password}@localhost:3306/{database}"
 
     engine = create_engine(connct)
 
