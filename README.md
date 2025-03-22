@@ -65,3 +65,6 @@ In this directory we will be exploring more SQL concepts.  We will create and de
 This project aims to bring together Python and Databases through the process of **Object Relational Mapping**.  The main difference between this directory and the previous two [SQL - Introduction](/SQL_introduction/) and [SQL - more queries](/SQL_more_queries/) is that we will be using Python exclusively to access Databases.
 
 The main focus of this directory will be in using `MySQLdb` module to understand how we can create SQL queries through a python program and `SQLAlchemy` to understand *ORM* patterns in Python and facilitate object persistance in our programs.
+
+## [Python Server-Side Rendering](/python-server_side_rendering/)
+This directory will explore **Server-Side Rendering** (**SSR**) through the use of python. **SSR** is a powerful technique where web pages are generated on the server and sent to the client as fully formed HTML. This contrasts with client-side rendering, where the browser builds the web page using JavaScript and dynamic data. In the following exercises I will implement **SSR** using Python and Flask, leveraging the **Jinja** templating engine to create dynamic, efficient, and SEO-friendly web applications.
