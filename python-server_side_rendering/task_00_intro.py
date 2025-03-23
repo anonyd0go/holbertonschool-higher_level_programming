@@ -46,11 +46,16 @@ def generate_invitations(template, attendees):
 
     for i, attendee in enumerate(attendees, start=1):
         output_file = f"output_{i}.txt"
-        for key in attendee:
-            if not attendee[key]:
-                attendee[key] = "N/A"
+        form_fillout = {
+            "name": attendee.get("name", "N/A"),
+            "event_title": attendee.get("event_title", "N/A"),
+            "event_date": attendee.get("event_date", "N/A"),
+            "event_location": attendee.get("event_location", "N/A"),
+
+        }
         try:
             with open(output_file, 'w', encoding='utf-8') as output:
-                output.write(template.format(**attendee))
+                output.write(template.format(**form_fillout))
+            printf(f"Generated {output_file}")
         except KeyError as e:
-            print(f"Error: missing key {str(e)} in template for attendee {i}")
+            print(f"Error: Missing key {str(e)} in the template for attendee {i}")
