@@ -56,6 +56,6 @@ def generate_invitations(template, attendees):
         try:
             with open(output_file, 'w', encoding='utf-8') as output:
                 output.write(template.format(**form_fillout))
-            printf(f"Generated {output_file}")
+            print(f"Generated {output_file}")
         except KeyError as e:
             print(f"Error: Missing key {str(e)} in the template for attendee {i}")
