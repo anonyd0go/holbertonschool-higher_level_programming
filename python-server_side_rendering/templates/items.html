@@ -3,10 +3,11 @@
      <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>My Flask App</title>
+          <title>Items List</title>
      </head>
      <body>
           {% include 'header.html' %}
+          <h1>Items List</h1>
           {% if items %}
                <ul>
                     {% for item in items %}
