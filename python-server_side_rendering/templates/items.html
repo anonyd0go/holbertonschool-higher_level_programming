@@ -1,0 +1,19 @@
+<!doctype html>
+   <html lang="en">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Flask App</title>
+   </head>
+   <body>
+        <ul>
+          {% if items %}
+               {% for item in items %}
+               <li>{{ item }}</li>
+               {% endfor %}
+          {% else %}
+               <li>No items found</li>
+          {% endif %}
+        </ul>
+   </body>
+   </html>
