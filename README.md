@@ -68,3 +68,6 @@ The main focus of this directory will be in using `MySQLdb` module to understand
 
 ## [Python Server-Side Rendering](/python-server_side_rendering/)
 This directory will explore **Server-Side Rendering** (**SSR**) through the use of python. **SSR** is a powerful technique where web pages are generated on the server and sent to the client as fully formed HTML. This contrasts with client-side rendering, where the browser builds the web page using JavaScript and dynamic data. In the following exercises I will implement **SSR** using Python and Flask, leveraging the **Jinja** templating engine to create dynamic, efficient, and SEO-friendly web applications.
+
+## [JavaScript DOM Manipulation](/javascript-dom_manipulation/)
+In this directory we will learn about Domain Object Model manipulation through the use of JavaScript.  We will explore element selection, modification and manipulation.  We will also explore event listeners and binding them to certain actions. Finally we wil also lesrn how to make requests with `XmlHTTPRequest` and `Fetch API`.
