@@ -1,0 +1,2 @@
+# Everything is an object
+In this directory we explore more of the theory behind Python objects,  The diferences between mutability and immutability, how variables relate to objects and other core Python implementation concepts.
