@@ -71,3 +71,6 @@ This directory will explore **Server-Side Rendering** (**SSR**) through the use 
 
 ## [JavaScript DOM Manipulation](/javascript-dom_manipulation/)
 In this directory we will learn about Domain Object Model manipulation through the use of JavaScript.  We will explore element selection, modification and manipulation.  We will also explore event listeners and binding them to certain actions. Finally we wil also lesrn how to make requests with `XmlHTTPRequest` and `Fetch API`.
+
+## [Everything is an object](/python-everything_is_object/)
+In this directory we explore more of the theory behind Python objects,  The diferences between mutability and immutability, how variables relate to objects and other core Python implementation concepts.
