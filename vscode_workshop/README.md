@@ -1,2 +1,2 @@
 # This is the VScode/ python workshop
-hola
+hola a todos
